@@ -5,6 +5,7 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 // import Page404 from './components/Page404'
 import User from './components/User';
+import Filter from './components/Filter';
 
 
 
@@ -20,7 +21,7 @@ function App() {
       {/* <Route path='/*' element={<Page404/>}/>    */}
       <Route path='/user/:name' element={<User/>}/>   
 
-
+      <Route path='/filter' element={<Filter/>}/>
       <Route path='/*' element={<Navigate to='/'/>}/>   
 
 
