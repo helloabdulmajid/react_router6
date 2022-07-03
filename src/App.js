@@ -1,8 +1,10 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes,Navigate} from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+// import Page404 from './components/Page404'
+import User from './components/User';
 
 
 
@@ -12,11 +14,15 @@ function App() {
       <BrowserRouter>
       <Navbar/>
       
-
-
       <Routes>
       <Route path='/' element={<Home/>}/>      
-      <Route path='/about' element={<About/>}/>      
+      <Route path='/about' element={<About/>}/>   
+      {/* <Route path='/*' element={<Page404/>}/>    */}
+      <Route path='/user/:name' element={<User/>}/>   
+
+
+      <Route path='/*' element={<Navigate to='/'/>}/>   
+
 
       </Routes>
       </BrowserRouter>

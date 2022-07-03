@@ -8,6 +8,15 @@ function About()
     <p>This is another paragraph of About Page </p>
     <Link to="/">Go to Home Page
     </Link>
+    <br/>
+    <li>
+    <Link to='/user/anil'>anil</Link>
+
+        </li>
+        <li>
+        <Link to='/user/peter'>peter</Link>
+        </li>
+        
     </>
 }
 export default About;

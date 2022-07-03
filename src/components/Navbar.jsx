@@ -7,6 +7,10 @@ function NavBar(){
         <li className='liststy'>
         <Link to="/about">About</Link>
         <Link to="/">Home</Link>
+        <Link to='/contact'>Contact Us</Link>
+       
+
+
         </li>
       </ul>
         </div>
