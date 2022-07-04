@@ -1,7 +1,8 @@
-import {Link,useNavigate} from 'react-router-dom'
+import {Link,useNavigate,useLocation} from 'react-router-dom'
  function Home()
 {
     const navigate=useNavigate();
+  
     return<>
     <h1>Home Page</h1>
     <p>This is a home page </p>

@@ -10,13 +10,13 @@ function About()
     </Link>
     <br/>
     <li>
-    <Link to='/user/anil'>anil</Link>
+    <Link to='/user/anil' state={{name:'anil kumar',age:36}}>anil</Link>
 
         </li>
         <li>
         <Link to='/user/peter'>peter</Link>
         </li>
         
-    </>
+    </> 
 }
 export default About;
