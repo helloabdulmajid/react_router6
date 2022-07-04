@@ -8,6 +8,8 @@ import User from './components/User';
 import Filter from './components/Filter';
 import Contact from './components/Contact';
 import Company from './components/Company';
+import Login from './components/login';
+import Protected from './components/Protected';
 
 
 
@@ -18,8 +20,10 @@ function App() {
       <Navbar/>
       
       <Routes>
-      <Route path='/' element={<Home/>}/>      
-      <Route path='/about' element={<About/>}/>   
+      <Route path='/' element={<Protected Components={Home}/>}/>     
+      <Route path='/login' element={<Login/>}/>      
+
+      <Route path='/about' element={<Protected Components={About}/>}/>   
       {/* <Route path='/*' element={<Page404/>}/>    */}
       <Route path='/user/:name' element={<User/>}/>   
 
